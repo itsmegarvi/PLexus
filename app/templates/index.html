@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plexus</title>
+</head>
+<body>
+    <div class="Pred">
+        <h1>Predicting the power load at an EV charging location</h1>
+
+        <form action="{{"pred/"}}" method="post">
+            <label for="date">Enter Date:</label>
+            <input type="date" id="date" placeholder="date" /><br>
+            <label for="time">Enter Time</label>
+            <input type="time" id="time" placeholder="time" /><br>
+            <label for="loca">Enter Location</label>
+            <input type="loco" id="loco" placeholder="loco" /><br>
+            
+            <button type="submit" class="btn">Predict</button>
+        </form>
+
+        {{prediction_text}}
+
+    </div>    
+</body>
+</html>
